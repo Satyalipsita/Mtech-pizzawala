@@ -5,7 +5,7 @@ function orderNow(item, price) {
   selectedItem = item;
   selectedPrice = price;
 
-  const phoneNumber = "91XXXXXXXXXX"; // WhatsApp number
+  const phoneNumber = "917978900914"; // WhatsApp number
   const message = `Hello, I want to order ${item} worth ₹${price}`;
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -18,8 +18,8 @@ function payNow() {
     return;
   }
 
-  const upiId = "yourupi@bank"; // replace with your UPI ID
-  const name = "MTech Pizzawala";
+  const upiId = "spanigrahi560-1@okicici"; // replace with your UPI ID
+  const name = "Satya Ranjan Panigrahi";
   const note = selectedItem;
 
   const upiUrl = `upi://pay?pa=${upiId}&pn=${name}&am=${selectedPrice}&cu=INR&tn=${note}`;
